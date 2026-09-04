@@ -409,6 +409,21 @@
         </article>
 
         <article class="card">
+          <p class="card-kicker">Trading &amp; AI platform &middot; Core engineer</p>
+          <h4>FUKU</h4>
+          <p class="result">Rust monorepo, 22 services in production</p>
+          <p>An AI trading platform on Solana: an LLM agent that executes DeFi actions from natural language in Telegram, on a Rust monorepo of roughly 87,000 lines behind Postgres, Redis and HashiCorp Vault.</p>
+          <ul>
+            <li>Fourteen months on the team and 214 commits: largest author of the Telegram bot, second largest of the agent tool layer that exposes 113 callable trading functions to the model.</li>
+            <li>Sole author of the signal service, which reads a Redis stream of Hyperliquid perpetuals activity, classifies each signal by risk, fans it out to filtered Telegram groups, and builds indicator packs on demand (RSI, MACD, Stochastic, ADX, DMI, EMA cross, Ichimoku, ATR, Bollinger width, CMF, MFI).</li>
+            <li>Built the Agent Commerce Protocol adapter end to end, so other autonomous agents can buy trade execution from FUKU: runtime, job orchestration, buyer, and the Solana seller agent.</li>
+            <li>Worked across the execution layer (Jupiter, Raydium CLMM, Meteora DLMM, Pump.fun, Hyperliquid perpetuals), wallet PnL and portfolio analytics, and a Postgres schema spanning 50 migrations.</li>
+          </ul>
+          <div class="card-tags"><span class="tag">Rust</span><span class="tag">Solana</span><span class="tag">Hyperliquid</span><span class="tag">LLM agents</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></div>
+          <p class="card-note">Private team repository</p>
+        </article>
+
+        <article class="card">
           <p class="card-kicker">Trading infrastructure &middot; Quant research</p>
           <h4>BTC Binary Market Trading System</h4>
           <p class="result">Strategy measured, then shelved on the evidence</p>
@@ -436,19 +451,6 @@
           <div class="card-links">
             <a class="card-src" href="https://doorcall-ai.vercel.app" target="_blank" rel="noopener" aria-label="DoorCall AI live demo">Live demo &rarr;</a>
           </div>
-        </article>
-
-        <article class="card">
-          <p class="card-kicker">Product &middot; Web3 &amp; AI</p>
-          <h4>FUKU AI</h4>
-          <p class="result">Solana &amp; EVM</p>
-          <p>A DeFi platform with autonomous on-chain agents.</p>
-          <ul>
-            <li>Wrote the smart contracts and wired ML models in for predictive analytics.</li>
-            <li>Built the backend microservices behind tokenomics, wallets and transaction monitoring.</li>
-          </ul>
-          <div class="card-tags"><span class="tag">Solana</span><span class="tag">EVM</span><span class="tag">Microservices</span><span class="tag">Smart contracts</span></div>
-          <p class="card-note">Private repository</p>
         </article>
 
         <article class="card">
@@ -523,8 +525,8 @@
       <div class="layer-row">
         <div><p class="layer-key">Layer 04</p><p class="layer-title">AI &amp; on-chain systems</p></div>
         <div>
-          <p class="layer-desc">Smart contracts and autonomous agents on Solana and EVM, a Jupiter-routed swap execution service with a Telegram control surface, a concentrated-liquidity strategy engine that simulates fees and impermanent loss before committing a position, and LLM-driven voice agents in production SaaS.</p>
-          <div class="layer-tags"><span class="tag">Solana</span><span class="tag">EVM</span><span class="tag">Jupiter</span><span class="tag">LLM agents</span></div>
+          <p class="layer-desc">LLM agents that place real trades: a function-calling layer wired to Solana venues (Jupiter, Raydium, Meteora, Pump.fun) and Hyperliquid perpetuals, a concentrated-liquidity strategy engine that simulates fees and impermanent loss before committing a position, and LLM voice agents in production SaaS.</p>
+          <div class="layer-tags"><span class="tag">Rust</span><span class="tag">Solana</span><span class="tag">Hyperliquid</span><span class="tag">LLM agents</span></div>
         </div>
       </div>
       <div class="layer-row">
@@ -573,7 +575,7 @@
         <ul class="tool-pills">
           <li class="pill">Node.js</li><li class="pill">REST APIs</li><li class="pill">PostgreSQL</li>
           <li class="pill">Prisma</li><li class="pill">Supabase</li><li class="pill">Firebase</li>
-          <li class="pill">Cloudflare D1</li><li class="pill">Microservices</li>
+          <li class="pill">Redis</li><li class="pill">Cloudflare D1</li><li class="pill">Microservices</li>
         </ul>
       </div>
       <div class="tool-group">
@@ -614,6 +616,19 @@
             <li>Took over existing production codebases and made them faster and safer without rewrites, through query optimization, caching and access-control repair.</li>
             <li>Hold Upwork's Top Rated Plus status.</li>
             <li>Work async with clients across EU and US time zones.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-when">2025 to 2026</p>
+        <div>
+          <h3 class="exp-role">Rust Engineer, AI &amp; Trading Infrastructure</h3>
+          <p class="exp-org">FUKU &middot; distributed engineering team</p>
+          <ul>
+            <li>Fourteen months on a Rust monorepo running roughly 22 containerised services in production: an LLM trading agent, Solana execution, Hyperliquid perpetuals and real-time market streams.</li>
+            <li>Owned the Telegram signal service and the Agent Commerce Protocol adapter end to end, and worked across the shared agent, database and Jupiter SDK crates.</li>
+            <li>Shipped into a codebase with fifteen contributors, behind Traefik, with HashiCorp Vault for key custody and 50 forward migrations on Postgres.</li>
           </ul>
         </div>
       </div>
