@@ -4,25 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Denis Fejza | Backend &amp; Full-Stack Engineer</title>
-<meta name="description" content="Backend and full-stack engineer with three years shipping production systems for paying clients: APIs, PostgreSQL, authentication and payments, plus AI and trading infrastructure. Europe-based, remote, full-time or contract." />
+<meta name="description" content="Denis Fejza, backend and full-stack engineer in Belgrade. 3+ years shipping production systems in TypeScript/Node.js, Rust, Python and PostgreSQL: APIs, auth, payments, AI agents and trading infrastructure. Open to full-time roles, remote or on-site in Belgrade." />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="theme-color" content="#0E1013" />
 <link rel="canonical" href="https://fejzadenis.github.io/" />
 
 <meta property="og:site_name" content="Denis Fejza" />
 <meta property="og:title" content="Denis Fejza | Backend &amp; Full-Stack Engineer" />
-<meta property="og:description" content="Three years shipping production systems for paying clients: APIs, PostgreSQL, auth and payments, plus AI and trading infrastructure. Systems depth from a RISC-V kernel to a compiler. Europe-based, remote." />
+<meta property="og:description" content="3+ years shipping production systems: APIs, PostgreSQL, auth and payments, plus AI agents and trading infrastructure in Rust. Systems depth from a RISC-V kernel to a compiler. Belgrade, remote or on-site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://fejzadenis.github.io/" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:image" content="https://fejzadenis.github.io/assets/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Denis Fejza, backend and full-stack engineer, Europe, remote." />
+<meta property="og:image:alt" content="Denis Fejza, backend and full-stack engineer, Belgrade, Serbia. Open to full-time roles." />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Denis Fejza | Backend &amp; Full-Stack Engineer" />
-<meta name="twitter:description" content="Three years shipping production systems for paying clients: APIs, PostgreSQL, auth and payments, plus AI and trading infrastructure." />
+<meta name="twitter:description" content="3+ years shipping production systems: APIs, PostgreSQL, auth and payments, plus AI agents and trading infrastructure in Rust." />
 <meta name="twitter:image" content="https://fejzadenis.github.io/assets/og.png" />
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -167,6 +167,9 @@
   .btn-primary:hover{transform:translateY(-1px); background:#dcaa48;}
   .btn-ghost{border:1px solid var(--line); color:var(--ink); font-weight:500;}
   .btn-ghost:hover{border-color:var(--ink-dim); transform:translateY(-1px);}
+  .core-stack{display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px; list-style:none; margin:-28px 0 56px; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--ink-dim);}
+  .core-stack .core-label{color:var(--signal); letter-spacing:.08em; text-transform:uppercase; font-size:11px; flex-basis:auto;}
+  @media (max-width:520px){.core-stack{margin:-16px 0 44px;} .core-stack .core-label{flex-basis:100%;}}
 
   /* ---------- STATS BAR ---------- */
   .stats-bar{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--bg-alt);}
@@ -207,8 +210,7 @@
   .group-label + .work-grid{margin-bottom:0;}
   .work-group + .work-group{margin-top:52px;}
   .work-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
-  .work-grid.compact{grid-template-columns:repeat(3,1fr);}
-  @media (max-width:900px){.work-grid.compact{grid-template-columns:repeat(2,1fr);}}
+  .work-grid.compact{grid-template-columns:repeat(2,1fr);}
   @media (max-width:800px){.work-grid{grid-template-columns:1fr;}}
   @media (max-width:640px){.work-grid.compact{grid-template-columns:1fr;}}
   .card{border:1px solid var(--line); border-radius:4px; padding:26px; background:var(--bg); transition:border-color .2s, transform .2s; display:flex; flex-direction:column;}
@@ -263,6 +265,7 @@
   .exp-item ul li::before{content:"\2192"; position:absolute; left:0; color:var(--signal); font-family:var(--mono);}
 
   /* ---------- EDUCATION ---------- */
+  .edu-list{display:flex; flex-direction:column; gap:16px;}
   .edu-row{display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:20px; border:1px solid var(--line); border-radius:4px; padding:28px; background:var(--bg-alt);}
   @media (max-width:520px){.edu-row{padding:22px 20px;}}
   .edu-row h3{font-family:var(--display); font-size:19px; margin:0 0 8px;}
@@ -335,14 +338,19 @@
 <main id="main">
 
 <div id="top" class="wrap hero">
-  <p class="avail-pill"><span class="dot" aria-hidden="true"></span><span>Open to remote backend &amp; full-stack roles, full-time or contract</span></p>
+  <p class="avail-pill"><span class="dot" aria-hidden="true"></span><span>Open to full-time backend &amp; full-stack roles &middot; remote or Belgrade</span></p>
   <h1 class="headline">I build systems that hold up when they <em>actually get used</em>.</h1>
-  <p class="hero-sub">I'm Denis Fejza, a <b>backend and full-stack engineer</b> based in Europe, working remote. Three years of production work for paying clients (APIs, PostgreSQL, authentication, payments), plus AI and trading infrastructure, and enough systems-level work (a RISC-V kernel, a compiler, a CPU in SystemVerilog) to understand what runs beneath the framework.</p>
+  <p class="hero-sub">I'm Denis Fejza, a <b>backend and full-stack engineer</b> in Belgrade. Three years of production work for clients in Europe and the US (APIs, PostgreSQL, authentication, payments), Rust services for an AI trading platform, and enough systems-level work (a RISC-V kernel, a compiler, a CPU in SystemVerilog) to understand what runs beneath the framework.</p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="mailto:fejza.denis@gmail.com?subject=Opportunity%20for%20Denis">Email me &rarr;</a>
     <a class="btn btn-ghost" href="#work">See the work</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/denis-fejza/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn btn-ghost" href="https://github.com/fejzadenis" target="_blank" rel="noopener">GitHub</a>
   </div>
+  <ul class="core-stack" aria-label="Core stack">
+    <li class="core-label">Core stack</li>
+    <li>TypeScript</li><li>Node.js</li><li>Rust</li><li>Python</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>LLM agents</li>
+  </ul>
 </div>
 
 <div class="stats-bar">
@@ -356,12 +364,12 @@
       <p class="stat-label">Faster page loads on a live client platform after query and caching work</p>
     </div>
     <div class="stat">
-      <div class="stat-num">Top Rated+</div>
-      <p class="stat-label">Upwork Top Rated Plus status</p>
+      <div class="stat-num">100% JSS</div>
+      <p class="stat-label">Job Success and Top Rated Plus as an Upwork freelancer</p>
     </div>
     <div class="stat">
-      <div class="stat-num">B.Sc.</div>
-      <p class="stat-label">Electrical Engineering &amp; Computing, ETF Belgrade</p>
+      <div class="stat-num">M.Sc.</div>
+      <p class="stat-label">Software Engineering, in progress at the University of Belgrade (B.Sc. 2026)</p>
     </div>
   </div>
 </div>
@@ -371,7 +379,7 @@
     <div class="section-head">
       <p class="section-num">01 / Selected Work</p>
       <h2 class="section-title">What I've built.</h2>
-      <p class="section-lede">Client platforms carrying real users and real money, trading and AI infrastructure I built end to end, and the systems work underneath it all. Source is public where the client allows it.</p>
+      <p class="section-lede">Client platforms carrying real users and real money, trading and AI infrastructure I built end to end, and the research and systems work underneath it all. Source is public where the client allows it.</p>
     </div>
 
     <div class="work-group">
@@ -396,13 +404,13 @@
           <p class="card-kicker">Client platform &middot; Performance</p>
           <h4>gradi.rs</h4>
           <p class="result">40% faster page loads</p>
-          <p>Ongoing development and maintenance of a production platform, working directly with the owner.</p>
+          <p>A live Serbian construction marketplace: a multi-level materials catalog, user-posted listings for contractors and equipment rental, and a quote-request flow instead of online checkout. PHP codebase, working directly with the owner.</p>
           <ul>
             <li>Profiled the slow paths, rewrote the expensive queries and added a caching layer.</li>
             <li>Cut page load times by roughly 40% without a rewrite, on the live system.</li>
             <li>Continue to ship features and handle production issues as they come up.</li>
           </ul>
-          <div class="card-tags"><span class="tag">Full-stack</span><span class="tag">SQL optimization</span><span class="tag">Caching</span><span class="tag">Maintenance</span></div>
+          <div class="card-tags"><span class="tag">PHP</span><span class="tag">SQL optimization</span><span class="tag">Caching</span><span class="tag">Full-stack</span></div>
           <div class="card-links">
             <a class="card-src" href="https://gradi.rs" target="_blank" rel="noopener" aria-label="gradi.rs live site">Live site &rarr;</a>
           </div>
@@ -472,8 +480,19 @@
     </div>
 
     <div class="work-group">
-      <h3 class="group-label">Systems work</h3>
+      <h3 class="group-label">Research &amp; systems work</h3>
       <div class="work-grid compact">
+
+        <article class="card">
+          <p class="card-kicker">AI research &middot; B.Sc. thesis</p>
+          <h4>Text-to-SQL with LLMs</h4>
+          <p class="result">Abstains instead of guessing</p>
+          <p>Translates natural-language questions into SQL, explains the result, and declines to answer when the model's confidence is low rather than returning a wrong query. Evaluated on the Spider benchmark and two demo databases.</p>
+          <div class="card-tags"><span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">SQL</span><span class="tag">Evaluation</span></div>
+          <div class="card-links">
+            <a class="card-src" href="https://github.com/fejzadenis/natural-language-to-sql-query-generation-using-large-language-models" target="_blank" rel="noopener" aria-label="Text-to-SQL thesis source on GitHub">Source &rarr;</a>
+          </div>
+        </article>
 
         <article class="card">
           <p class="card-kicker">Systems &middot; C++</p>
@@ -565,17 +584,18 @@
       <div class="tool-group">
         <h3>Languages</h3>
         <ul class="tool-pills">
-          <li class="pill">TypeScript</li><li class="pill">Python</li><li class="pill">Java</li>
-          <li class="pill">C++</li><li class="pill">C</li><li class="pill">Rust</li>
-          <li class="pill">SQL</li><li class="pill">Dart</li><li class="pill">SystemVerilog</li>
+          <li class="pill">TypeScript</li><li class="pill">Rust</li><li class="pill">Python</li>
+          <li class="pill">SQL</li><li class="pill">PHP</li><li class="pill">Java</li>
+          <li class="pill">C++</li><li class="pill">C</li><li class="pill">Dart</li><li class="pill">SystemVerilog</li>
         </ul>
       </div>
       <div class="tool-group">
         <h3>Backend &amp; data</h3>
         <ul class="tool-pills">
-          <li class="pill">Node.js</li><li class="pill">REST APIs</li><li class="pill">PostgreSQL</li>
+          <li class="pill">Node.js</li><li class="pill">Express</li><li class="pill">FastAPI</li>
+          <li class="pill">REST APIs</li><li class="pill">PostgreSQL</li><li class="pill">Redis</li>
           <li class="pill">Prisma</li><li class="pill">Supabase</li><li class="pill">Firebase</li>
-          <li class="pill">Redis</li><li class="pill">Cloudflare D1</li><li class="pill">Microservices</li>
+          <li class="pill">Cloudflare D1</li><li class="pill">Microservices</li>
         </ul>
       </div>
       <div class="tool-group">
@@ -588,9 +608,9 @@
       <div class="tool-group">
         <h3>Tooling &amp; infra</h3>
         <ul class="tool-pills">
-          <li class="pill">Git</li><li class="pill">Docker</li><li class="pill">Linux</li>
-          <li class="pill">CI/CD</li><li class="pill">Stripe</li><li class="pill">Cloudflare</li>
-          <li class="pill">Vercel</li>
+          <li class="pill">Docker</li><li class="pill">Linux</li><li class="pill">Git</li>
+          <li class="pill">CI/CD</li><li class="pill">Cloudflare Workers</li><li class="pill">Vercel</li>
+          <li class="pill">HashiCorp Vault</li><li class="pill">Stripe</li><li class="pill">Clerk</li>
         </ul>
       </div>
     </div>
@@ -602,17 +622,17 @@
     <div class="section-head">
       <p class="section-num">04 / Experience</p>
       <h2 class="section-title">Where I've done it.</h2>
-      <p class="section-lede">Three years of contract work means three years of shipping to deadlines, owning production incidents, and explaining technical trade-offs to the person paying for the outcome.</p>
+      <p class="section-lede">Full-time, part-time and contract roles since 2023: shipping to deadlines, owning production incidents, and explaining technical trade-offs to the person paying for the outcome.</p>
     </div>
     <div class="exp-list">
 
       <div class="exp-item">
-        <p class="exp-when">2026 to present</p>
+        <p class="exp-when">May 2026 to present</p>
         <div>
-          <h3 class="exp-role">Full-Stack Engineer (Contract)</h3>
-          <p class="exp-org">Macks Studios &middot; US studio serving service businesses</p>
+          <h3 class="exp-role">Full-Stack Engineer</h3>
+          <p class="exp-org">Macks Studios &middot; Contract &middot; US studio serving service businesses</p>
           <ul>
-            <li>Own security, reliability and integrations across client platforms, including a live SvelteKit membership platform on Cloudflare Workers with Stripe billing, role-based access and gated video.</li>
+            <li>Own security, reliability and integrations across client platforms, including a live SvelteKit membership platform on Cloudflare Workers with Stripe billing, role-based access and gated video for about 640 members.</li>
             <li>Audited authentication, payment provisioning, webhook handling and data retention end to end, ranked the findings by severity, then repaired access control and admin role management.</li>
             <li>Fixed email deliverability (SPF/DKIM, list hygiene, WooCommerce transactional email) and now delivering a full-funnel event tracking and attribution rebuild.</li>
           </ul>
@@ -620,27 +640,13 @@
       </div>
 
       <div class="exp-item">
-        <p class="exp-when">2024 to present</p>
+        <p class="exp-when">May 2024 to present</p>
         <div>
           <h3 class="exp-role">Full-Stack Engineer</h3>
-          <p class="exp-org">gradi.rs &middot; construction marketplace</p>
+          <p class="exp-org">gradi.rs &middot; Part-time &middot; construction marketplace</p>
           <ul>
-            <li>Ongoing development of a live Serbian marketplace for construction materials, transport, contractors and equipment rental, working directly with the owner.</li>
+            <li>Development of a live Serbian marketplace for construction materials, contractors and equipment rental on a PHP codebase, working directly with the owner.</li>
             <li>Profiled the slow paths, rewrote the expensive queries and added caching, cutting page load times by roughly 40% without a rewrite.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <p class="exp-when">2023 to present</p>
-        <div>
-          <h3 class="exp-role">Freelance Software Engineer</h3>
-          <p class="exp-org">Upwork (Top Rated Plus) and direct clients</p>
-          <ul>
-            <li>Delivered backend and full-stack builds end to end: requirements, architecture, implementation, deployment and handover.</li>
-            <li>Took over existing production codebases and made them faster and safer without rewrites, through query optimization, caching and access-control repair.</li>
-            <li>Hold Upwork's Top Rated Plus status.</li>
-            <li>Work async with clients across EU and US time zones.</li>
           </ul>
         </div>
       </div>
@@ -648,23 +654,36 @@
       <div class="exp-item">
         <p class="exp-when">Jan 2025 to Mar 2026</p>
         <div>
-          <h3 class="exp-role">Backend Engineer (Rust), Web3 &amp; AI Trading</h3>
-          <p class="exp-org">FUKU &middot; distributed engineering team</p>
+          <h3 class="exp-role">Backend Engineer (Rust)</h3>
+          <p class="exp-org">FUKU AI &middot; Full-time &middot; AI trading platform</p>
           <ul>
             <li>Built on a Rust monorepo running roughly 22 containerised services in production: an LLM trading agent, Solana execution, Hyperliquid perpetuals and real-time market streams.</li>
             <li>Owned the Telegram signal service and the Agent Commerce Protocol adapter end to end, and worked across the shared agent, database and Jupiter SDK crates.</li>
-            <li>Shipped into a codebase with fifteen contributors, behind Traefik, with HashiCorp Vault for key custody and 50 forward migrations on Postgres.</li>
+            <li>Shipped into a codebase with fifteen contributors, behind Traefik, with HashiCorp Vault for key custody and 50 forward migrations on Postgres. Contributed to the token migration from Solana to Base.</li>
           </ul>
         </div>
       </div>
 
       <div class="exp-item">
-        <p class="exp-when">2023 to 2024</p>
+        <p class="exp-when">Feb 2023 to Oct 2025</p>
+        <div>
+          <h3 class="exp-role">Freelance Backend &amp; Full-Stack Engineer</h3>
+          <p class="exp-org">Upwork and direct clients &middot; Remote</p>
+          <ul>
+            <li>Delivered backend and full-stack builds end to end for EU and US clients: requirements, architecture, implementation, deployment and handover.</li>
+            <li>Took over existing production codebases and made them faster and safer without rewrites, through query optimization, caching and access-control repair.</li>
+            <li>Reached Top Rated Plus with a 100% Job Success Score.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-when">May 2023 to Mar 2024</p>
         <div>
           <h3 class="exp-role">Junior Software Engineer</h3>
           <p class="exp-org">SEOTEAM.IO</p>
           <ul>
-            <li>Replaced manual SEO process and reporting work with repeatable Python tooling.</li>
+            <li>Built Python automation tools, scheduled jobs and API integrations that replaced manual SEO data collection and reporting.</li>
             <li>Turned a recurring human task into a scheduled, reviewable pipeline.</li>
           </ul>
         </div>
@@ -692,21 +711,30 @@
       <p class="section-num">05 / Education</p>
       <h2 class="section-title">Where the fundamentals came from.</h2>
     </div>
-    <div class="edu-row">
-      <div>
-        <h3>B.Sc. Electrical Engineering and Computing</h3>
-        <p>University of Belgrade, School of Electrical Engineering (ETF), Department of Computer Engineering and Informatics. A mathematics and systems curriculum, assessed on implementation projects: the kernel, the compiler and the CPU in Selected Work all started here.</p>
-        <ul class="edu-courses">
-          <li class="tag">Operating systems</li><li class="tag">Compilers</li><li class="tag">Computer architecture</li>
-          <li class="tag">Algorithms &amp; data structures</li><li class="tag">Digital design / VLSI</li><li class="tag">Databases</li>
-        </ul>
+    <div class="edu-list">
+      <div class="edu-row">
+        <div>
+          <h3>M.Sc. Computer Software Engineering</h3>
+          <p>University of Belgrade, School of Electrical Engineering (ETF), Software Engineering module. Started October 2026, alongside work.</p>
+        </div>
+        <span class="edu-badge">In progress</span>
       </div>
-      <span class="edu-badge">Degree completed</span>
+      <div class="edu-row">
+        <div>
+          <h3>B.Sc. Electrical Engineering and Computing</h3>
+          <p>University of Belgrade, School of Electrical Engineering (ETF), Computer Engineering and Informatics, 2020 to 2026. A mathematics and systems curriculum, assessed on implementation projects: the kernel, the compiler, the CPU and the Text-to-SQL thesis in Selected Work all started here.</p>
+          <ul class="edu-courses">
+            <li class="tag">Operating systems</li><li class="tag">Compilers</li><li class="tag">Computer architecture</li>
+            <li class="tag">Algorithms &amp; data structures</li><li class="tag">Digital design / VLSI</li><li class="tag">Databases</li>
+          </ul>
+        </div>
+        <span class="edu-badge">Completed 2026</span>
+      </div>
     </div>
     <ul class="langs">
       <li class="lang"><b>Serbian</b> &middot; Native</li>
       <li class="lang"><b>English</b> &middot; Full professional</li>
-      <li class="lang"><b>German</b> &middot; Conversational</li>
+      <li class="lang"><b>German</b> &middot; Limited working</li>
     </ul>
   </div>
 </section>
@@ -714,7 +742,7 @@
 <section id="final-cta">
   <div class="wrap">
     <h2>Let's talk about the work.</h2>
-    <p>A backend or full-stack role is the priority, and I take on contract and freelance engagements alongside it. Remote across EU and US time zones, based in Europe. Send a short note about the team and the problem, and I'll reply within a day.</p>
+    <p>A full-time backend or full-stack role is the priority, remote across EU and US time zones or on-site in Belgrade. I also take on contract work alongside it. Send a short note about the team and the problem, and I'll reply within a day.</p>
     <div class="cta-actions">
       <a class="btn btn-primary" href="mailto:fejza.denis@gmail.com?subject=Role%20opportunity">Discuss a role &rarr;</a>
       <a class="btn btn-ghost" href="mailto:fejza.denis@gmail.com?subject=Project%20inquiry">Discuss a project</a>
@@ -734,7 +762,7 @@
       <li><a href="tel:+381628122047">+381&nbsp;62&nbsp;812&nbsp;2047</a></li>
       <li><a href="https://www.linkedin.com/in/denis-fejza/" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="https://github.com/fejzadenis" target="_blank" rel="noopener">GitHub</a></li>
-      <li>Europe (CET)</li>
+      <li>Belgrade, Serbia (CET)</li>
     </ul>
   </div>
 </footer>
@@ -755,7 +783,8 @@
     "telephone": "+381628122047",
     "address": {
       "@type": "PostalAddress",
-      "addressRegion": "Europe"
+      "addressLocality": "Belgrade",
+      "addressCountry": "RS"
     },
     "alumniOf": {
       "@type": "CollegeOrUniversity",
@@ -775,6 +804,11 @@
       "Operating systems",
       "Compilers",
       "Computer architecture",
+      "Rust",
+      "Redis",
+      "LLM agents",
+      "Text-to-SQL",
+      "Stripe payments",
       "Solana",
       "Trading systems"
     ],
