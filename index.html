@@ -387,16 +387,17 @@
       <div class="work-grid">
 
         <article class="card">
-          <p class="card-kicker">Client platform &middot; Security &amp; access control</p>
+          <p class="card-kicker">Client platform &middot; Production, billing &amp; tracking</p>
           <h4>ShivWorks Network</h4>
-          <p class="result">Full security &amp; reliability audit, then the repairs</p>
-          <p>A live SvelteKit membership platform on Cloudflare: paid tiers, gated course video, transactional email and a real member base.</p>
+          <p class="result">Taken to production for ~640 paying members</p>
+          <p>A paid membership platform on SvelteKit, Cloudflare Workers, D1 and Stream: course library, gated video, WooCommerce purchases and a marketing funnel across a landing site and store.</p>
           <ul>
-            <li>Audited authentication, payment provisioning, webhook handling and data retention end to end, and delivered the findings ranked by severity.</li>
-            <li>Repaired broken access control, introduced admin role management and secured video delivery.</li>
-            <li>Traced and fixed email deliverability that was silently dropping member mail.</li>
+            <li>Launched it to production and ran it live: Clerk auth cutover, course library, resumable video publishing and production fixes.</li>
+            <li>Hardened billing and security: a durable WooCommerce webhook pipeline (HMAC, idempotency, retries, replay), access revocation on refunds, atomic rate limits and device limits.</li>
+            <li>Built the tracking stack (GTM, Meta Pixel and Ads, GA4, HYROS, UTM attribution) and an analytics dashboard that reconciles WooCommerce, Meta, GA4 and HYROS data.</li>
+            <li>Fixed email deliverability that was silently dropping member mail.</li>
           </ul>
-          <div class="card-tags"><span class="tag">SvelteKit</span><span class="tag">Cloudflare D1</span><span class="tag">Clerk</span><span class="tag">Stripe</span><span class="tag">Auth &amp; RBAC</span></div>
+          <div class="card-tags"><span class="tag">SvelteKit</span><span class="tag">Cloudflare Workers</span><span class="tag">D1</span><span class="tag">Clerk</span><span class="tag">WooCommerce</span><span class="tag">Meta Ads</span><span class="tag">GA4</span></div>
           <p class="card-note">Private client codebase</p>
         </article>
 
@@ -611,6 +612,7 @@
           <li class="pill">Docker</li><li class="pill">Linux</li><li class="pill">Git</li>
           <li class="pill">CI/CD</li><li class="pill">Cloudflare Workers</li><li class="pill">Vercel</li>
           <li class="pill">HashiCorp Vault</li><li class="pill">Stripe</li><li class="pill">Clerk</li>
+          <li class="pill">Meta Pixel &amp; Ads</li><li class="pill">GA4</li><li class="pill">GTM</li>
         </ul>
       </div>
     </div>
@@ -622,31 +624,20 @@
     <div class="section-head">
       <p class="section-num">04 / Experience</p>
       <h2 class="section-title">Where I've done it.</h2>
-      <p class="section-lede">Full-time, part-time and contract roles since 2023: shipping to deadlines, owning production incidents, and explaining technical trade-offs to the person paying for the outcome.</p>
+      <p class="section-lede">Production work since 2023: shipping to deadlines, owning production incidents, and explaining technical trade-offs to the person paying for the outcome.</p>
     </div>
     <div class="exp-list">
 
       <div class="exp-item">
-        <p class="exp-when">May 2026 to present</p>
+        <p class="exp-when">May 2026 to Oct 2026</p>
         <div>
           <h3 class="exp-role">Full-Stack Engineer</h3>
-          <p class="exp-org">Macks Studios &middot; Contract &middot; US studio serving service businesses</p>
+          <p class="exp-org">Macks Studios &middot; US studio serving service businesses</p>
           <ul>
-            <li>Own security, reliability and integrations across client platforms, including a live SvelteKit membership platform on Cloudflare Workers with Stripe billing, role-based access and gated video for about 640 members.</li>
-            <li>Audited authentication, payment provisioning, webhook handling and data retention end to end, ranked the findings by severity, then repaired access control and admin role management.</li>
-            <li>Fixed email deliverability (SPF/DKIM, list hygiene, WooCommerce transactional email) and now delivering a full-funnel event tracking and attribution rebuild.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <p class="exp-when">May 2024 to present</p>
-        <div>
-          <h3 class="exp-role">Full-Stack Engineer</h3>
-          <p class="exp-org">gradi.rs &middot; Part-time &middot; construction marketplace</p>
-          <ul>
-            <li>Development of a live Serbian marketplace for construction materials, contractors and equipment rental on a PHP codebase, working directly with the owner.</li>
-            <li>Profiled the slow paths, rewrote the expensive queries and added caching, cutting page load times by roughly 40% without a rewrite.</li>
+            <li>Took a SvelteKit membership platform on Cloudflare Workers, D1 and Stream to production for about 640 paying members and ran it live: Clerk auth cutover, course library, resumable video publishing and production fixes.</li>
+            <li>Hardened billing and security: durable WooCommerce webhook pipeline with HMAC verification, idempotency, retries and replay, access revocation on refunds, atomic rate limits, session revocation and device limits.</li>
+            <li>Built the tracking stack across landing site and store (Google Tag Manager, Meta Pixel and Meta Ads, GA4, HYROS, UTM attribution) and an analytics dashboard reconciling WooCommerce, Meta, GA4 and HYROS data.</li>
+            <li>Fixed email deliverability that was silently dropping member mail (SPF/DKIM, ActiveCampaign, WooCommerce transactional email).</li>
           </ul>
         </div>
       </div>
@@ -655,7 +646,7 @@
         <p class="exp-when">Jan 2025 to Mar 2026</p>
         <div>
           <h3 class="exp-role">Backend Engineer (Rust)</h3>
-          <p class="exp-org">FUKU AI &middot; Full-time &middot; AI trading platform</p>
+          <p class="exp-org">FUKU AI &middot; AI trading platform</p>
           <ul>
             <li>Built on a Rust monorepo running roughly 22 containerised services in production: an LLM trading agent, Solana execution, Hyperliquid perpetuals and real-time market streams.</li>
             <li>Owned the Telegram signal service and the Agent Commerce Protocol adapter end to end, and worked across the shared agent, database and Jupiter SDK crates.</li>
@@ -665,10 +656,22 @@
       </div>
 
       <div class="exp-item">
+        <p class="exp-when">May 2024 to present</p>
+        <div>
+          <h3 class="exp-role">Full-Stack Engineer</h3>
+          <p class="exp-org">gradi.rs &middot; construction marketplace</p>
+          <ul>
+            <li>Development of a live Serbian marketplace for construction materials, contractors and equipment rental on a PHP codebase, working directly with the owner.</li>
+            <li>Profiled the slow paths, rewrote the expensive queries and added caching, cutting page load times by roughly 40% without a rewrite.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
         <p class="exp-when">Feb 2023 to Oct 2025</p>
         <div>
           <h3 class="exp-role">Freelance Backend &amp; Full-Stack Engineer</h3>
-          <p class="exp-org">Upwork and direct clients &middot; Remote</p>
+          <p class="exp-org">Upwork and direct clients</p>
           <ul>
             <li>Delivered backend and full-stack builds end to end for EU and US clients: requirements, architecture, implementation, deployment and handover.</li>
             <li>Took over existing production codebases and made them faster and safer without rewrites, through query optimization, caching and access-control repair.</li>
